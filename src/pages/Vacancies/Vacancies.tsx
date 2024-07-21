@@ -14,6 +14,7 @@ function Vacancies() {
     
     if(isLoading) {
       return <div>Loading...</div>
+    
     }
     
   return (
