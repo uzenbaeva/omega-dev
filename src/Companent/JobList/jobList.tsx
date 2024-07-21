@@ -7,7 +7,7 @@ export const JobList = ({
 }: 
 {
     
-    svgUrl: string,
+    svgUrl: any,
     componyName: string,
     companyRole: string,
     salary: string,
