@@ -33,7 +33,7 @@ function Vacancies() {
                   {
                     data && data.map((item: any) => 
                       <JobList
-                          svgUrl={item?.organization_icon}
+                          url={item?.organization_icon}
                           componyName={item?.organization_name}
                           companyRole={item?.position}
                           salary ={`${item?.price_from} - ${item?.price_to} ${item?.currency

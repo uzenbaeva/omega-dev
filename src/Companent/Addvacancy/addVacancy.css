@@ -52,10 +52,11 @@
   
   input[type="text"],
   input[type="email"],
+  input[type="url"],
   input[type="tel"],
   textarea,
   select {
-    /* padding: 10px 200px 10px 5px; */
+    padding: 10px 200px 10px 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;

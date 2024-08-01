@@ -1,5 +1,5 @@
 export const JobList = ({
-    svgUrl,
+    url,
     componyName,
     companyRole,
     salary,
@@ -9,7 +9,7 @@ export const JobList = ({
 }: 
 {
     
-    svgUrl: string,
+    url: any,
     componyName: string,
     companyRole: string,
     salary: string,
@@ -20,14 +20,12 @@ export const JobList = ({
     return(
         <>
             <div className="jobs-list" data-v-3fc4231a>
-                    {/* <a href="/ru/jobs/hr-menedzher-validon-agency-14277"className="link"data-v-0cfa5cf6> </a> */}
+            {/* <a href="/ru/jobs/hr-menedzher-validon-agency-14277"className="link"data-v-0cfa5cf6>  */}
                 <div className="jobs-item content"data-v-6dc437e8data-v-0cfa5cf6>
                     <div className="jobs-item-field icon" data-v-6dc437e8>
-                        <div className="preview image contain white image"data-v-7ad410c8data-v-6dc437e8>
-                            <picture data-v-7ad410c8>
-                              <img  className="joblistsvg" src={svgUrl} alt="" /> 
-                            </picture>
-                        </div>
+                        <picture>
+                            <img className="joblistsvg" src={url} alt="" />
+                        </picture>
 
                         <div className="information" data-v-6dc437e8>
                             <div className="jobs-item-field company" data-v-6dc437e8>
@@ -67,6 +65,7 @@ export const JobList = ({
                         </div> 
                     </div>
                 </div>
+            {/* </a> */}
             </div>     
         </>      
     )
