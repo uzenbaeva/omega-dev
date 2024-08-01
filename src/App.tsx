@@ -7,16 +7,21 @@ import Video from "./pages/Video/Video";
 import Organizations from "./pages/Organizations/Organizations";
 import Community from "./pages/Сommunity/Community";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Login from "./Companent/Login/login";
-import Signup from "./Companent/SignUp/signup";
-import RouteProtector from "./Companent/RouteProtect";
-import AddVacancy from "./Companent/Addvacancy/addVacancy";
+import Login from "./Component/Login/login";
+import Signup from "./Component/SignUp/signup";
+import RouteProtector from "./Component/RouteProtect";
+import AddVacancy from "./Component/Addvacancy/addVacancy";
+import Header from "./Component/Header/Header";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
+    },
+    {
+        path: "/",
+        element: <Header />,
     },
     {
         path: "/vacancies",

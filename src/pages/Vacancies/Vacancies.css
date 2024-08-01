@@ -52,8 +52,7 @@
 }
 
 .jobs-list{
-  display: flex;
-  justify-content: space-between;
+  margin: 2px 0;
 
 }
 
@@ -77,7 +76,8 @@ h4{
   width: 35px;
   height: 35px;
   border-radius: 2px;
-margin:0 20px 0 0 ;}
+  margin:0 20px 0 0 ;
+}
 
 picture[data-v-7ad410c8] img .jobList{
   border-radius: 50%;

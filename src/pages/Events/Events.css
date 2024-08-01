@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .events__button{
     display: flex;
     align-items: center;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Footer from "../../Companent/Footer/Footer";
 import ".//addVacancy.css";
 import { Link, useNavigate } from "react-router-dom";
 import { VscClose } from "react-icons/vsc";
 import AddJobs from "./AddJobs";
+import Footer from "../Footer/Footer";
 
 function AddVacancy() {
   

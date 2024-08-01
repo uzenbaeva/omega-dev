@@ -1,8 +1,8 @@
-import Footer from "../../Companent/Footer/Footer"
-import Header from "../../Companent/Header/Header"
 import "./Events.css"
-import { EventsList } from "../../Companent/EventsList/eventsList"
 import useFetch from "../../hooks/useFetch"
+import { EventsList } from "../../Component/EventsList/eventsList";
+import Header from "../../Component/Header/Header";
+import Footer from "../../Component/Footer/Footer";
 
 
 function Events() {
@@ -19,7 +19,7 @@ function Events() {
     <>
       <Header/>
         <div id="events">
-            <div className="container">
+          <div className="container">
                 <div className="events">
                   <div className="events__button">
                     <button >Добавить мероприятие</button>
@@ -28,7 +28,7 @@ function Events() {
                   {
                     data && data.map((item: any) => 
                       <EventsList
-                      imgUrl={item?.cover}
+                          imgUrl={item?.cover}
                           date={item?.date}
                           eventsName={item?.name}
                           organizationName ={item?.organization_name}
@@ -37,12 +37,12 @@ function Events() {
                     )
                   }    
               </div>
-            </div>
+          </div>
             <div className="btns">
               <button className="btn previous">Предыдующая страница</button>
               <button className="btn next">Cледующая страница</button>
             </div>
-            </div>
+        </div>
         <Footer/>
     </>
   )

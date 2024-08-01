@@ -16,6 +16,8 @@ function AddJobs() {
   const [telegram, setTelegram] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [icon, setIcon] = useState('');
+
 
 
   
@@ -31,6 +33,7 @@ function AddJobs() {
         salary: salary,
         phone: phone,    
         type: type,
+        organization_icon: icon,
       });
 
       if (response.data.success) {
@@ -53,6 +56,16 @@ function AddJobs() {
           опубликована после проверки модератором
         </p>
         <form id="vacancy-form">
+
+        <label htmlFor="organization_icon">icon*</label>
+          <input
+            className="add-input"
+            type="url"
+            id="organization_icon"
+            value={icon}
+            onChange={(e) => setIcon(e.target.value)}
+          />
+
           <label htmlFor="organizationName">Компании*</label>
           <input
             type="text"
@@ -136,7 +149,7 @@ function AddJobs() {
           <input
             className="add-input"
             type="tel"
-            id="phone"
+            id="city"
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
@@ -171,9 +184,11 @@ function AddJobs() {
               <option value="" disabled>
                 Выберите тип работы
               </option>
-              <option value="full-time">Полная занятость</option>
-              <option value="part-time">Частичная занятость</option>
-              <option value="remote">Удаленная работа</option>
+              <option value="Переезд">Переезд(работа за границей)</option>
+              <option value="Стажировка">Стажировка(только Кыргызстан)</option>
+              <option value="Удаленная работа">Удаленная работа</option>
+              <option value="Работа в офисе(тобко Кыргызстан)">Работа в офисе(тобко Кыргызстан)</option>
+              <option value="Разовая работа">Разовая работа(Проект)</option>
           </select>
 
           <div className="buttons">

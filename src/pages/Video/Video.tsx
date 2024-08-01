@@ -1,8 +1,8 @@
 import "./Video.css";
-import Footer from "../../Companent/Footer/Footer";
-import Header from "../../Companent/Header/Header";
 import useFetch from "../../hooks/useFetch";
-import { VideoList } from "../../Companent/VideoList/videoList";
+import { VideoList } from "../../Component/VideoList/videoList";
+import Header from "../../Component/Header/Header";
+import Footer from "../../Component/Footer/Footer";
 
 
 function Video() {
