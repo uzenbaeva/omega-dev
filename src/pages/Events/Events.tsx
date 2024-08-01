@@ -1,8 +1,8 @@
-import Footer from "../../Companent/Footer/Footer"
-import Header from "../../Companent/Header/Header"
 import "./Events.css"
-import { EventsList } from "../../Companent/EventsList/eventsList"
 import useFetch from "../../hooks/useFetch"
+import { EventsList } from "../../Component/EventsList/eventsList";
+import Header from "../../Component/Header/Header";
+import Footer from "../../Component/Footer/Footer";
 
 
 function Events() {

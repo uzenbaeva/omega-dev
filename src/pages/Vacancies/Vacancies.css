@@ -52,8 +52,7 @@
 }
 
 .jobs-list{
-  display: flex;
-  justify-content: space-between;
+  margin: 2px 0;
 
 }
 

@@ -1,8 +1,8 @@
-import Footer from "../../Companent/Footer/Footer";
-import Header from "../../Companent/Header/Header";
-import { OrganizationsList } from "../../Companent/OrganizationsList/organizationsList";
 import useFetch from "../../hooks/useFetch";
 import "../Organizations/Organizations.css";
+import { OrganizationsList } from "../../Component/OrganizationsList/organizationsList";
+import Header from "../../Component/Header/Header";
+import { Footer } from "antd/es/layout/layout";
 
 function Organizations() {
     const{ data, isLoading } = useFetch({

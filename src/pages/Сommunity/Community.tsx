@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import Footer from "../../Companent/Footer/Footer";
-import Header from "../../Companent/Header/Header";
+
 import useFetch from "../../hooks/useFetch";
 import "../Сommunity/Community.css";
-import { TeleChatList } from "../../Companent/TelegramChat/teleChatList";
-import { TelegrammList } from "../../Companent/Telegramm/telegrammList";
-import { TeleChannelsList } from "../../Companent/TeleChannels/teleChanelsList";
-import { WebsiteList } from "../../Companent/WebsiteList/websiteList";
-import { FacebookList } from "../../Companent/Facebook/facebookList";
-import { YouTubeList } from "../../Companent/YouTubeList/youtubeList";
-import { GithubList } from "../../Companent/GIthubList/githubList";
+import { TelegrammList } from "../../Component/Telegramm/telegrammList";
+import { TeleChatList } from "../../Component/TelegramChat/teleChatList";
+import { TeleChannelsList } from "../../Component/TeleChannels/teleChanelsList";
+import { WebsiteList } from "../../Component/WebsiteList/websiteList";
+import { FacebookList } from "../../Component/Facebook/facebookList";
+import { YouTubeList } from "../../Component/YouTubeList/youtubeList";
+import { GithubList } from "../../Component/GIthubList/githubList";
+import Header from "../../Component/Header/Header";
+import Footer from "../../Component/Footer/Footer";
+
 
 function Community() {
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const JobList = ({
     url,
     componyName,
@@ -20,7 +22,7 @@ export const JobList = ({
     return(
         <>
             <div className="jobs-list" data-v-3fc4231a>
-            {/* <a href="/ru/jobs/hr-menedzher-validon-agency-14277"className="link"data-v-0cfa5cf6>  */}
+            <Link to ={"/aboutVacancy"}>
                 <div className="jobs-item content"data-v-6dc437e8data-v-0cfa5cf6>
                     <div className="jobs-item-field icon" data-v-6dc437e8>
                         <picture>
@@ -65,7 +67,7 @@ export const JobList = ({
                         </div> 
                     </div>
                 </div>
-            {/* </a> */}
+            </Link>
             </div>     
         </>      
     )

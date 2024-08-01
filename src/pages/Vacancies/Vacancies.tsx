@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Footer from "../../Companent/Footer/Footer";
-import Header from "../../Companent/Header/Header";
 import "./Vacancies.css";
 import useFetch from "../../hooks/useFetch";
-import { JobList } from "../../Companent/JobList/jobList";
+import Header from "../../Component/Header/Header";
+import { JobList } from "../../Component/JobList/jobList";
+import Footer from "../../Component/Footer/Footer";
 
 function Vacancies() {
     const{ data, isLoading } = useFetch({
