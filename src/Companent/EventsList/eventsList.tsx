@@ -24,7 +24,7 @@ export const EventsList = ({
                     filter: 'blur(0.5px)',
                 }} 
             >
-            <a href="dev.kg">
+            <a href="uzenbaeva.1">
                 <div className="events-date">
                     <span>
                         <time dateTime="2024-06-10T12:30:00.000z">

@@ -4,6 +4,9 @@
     justify-content: end;
     margin-bottom: 2pc;
 }
+a{
+    text-decoration: none;
+}
 
 .events__button button{
     padding: 1px 18px;

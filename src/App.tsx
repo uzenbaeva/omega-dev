@@ -11,6 +11,7 @@ import Login from "./Companent/Login/login";
 import Signup from "./Companent/SignUp/signup";
 import RouteProtector from "./Companent/RouteProtect";
 import AddVacancy from "./Companent/Addvacancy/addVacancy";
+import AddEvents from "./Companent/AddEvents/addEvents";
 
 
 const router = createBrowserRouter([
@@ -51,6 +52,15 @@ const router = createBrowserRouter([
         element: (
            <RouteProtector>
                 <AddVacancy />
+           </RouteProtector>
+            
+        )
+    },
+    {
+        path: "/addEvent",
+        element: (
+           <RouteProtector>
+                <AddEvents />
            </RouteProtector>
             
         )
